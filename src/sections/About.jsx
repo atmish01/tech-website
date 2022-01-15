@@ -25,17 +25,14 @@ function About() {
           variants={reveal}
           transition={{ delay: 0.1, stiffness: 300 }}
         >
-          <Title title="About CRYO" color="blue" />
+          <Title title="About TechWeek" color="blue" />
           <p>
-            We Believe that everyone deserves to have a website or online store.
-            Innovation and simplicity make us happy. Our mission is to help
-            people achieve what they have passionate about it.
+          TECHWEEK is the annual workshop galore organised by IEEE DTU which offers budding engineers an insight into the various new and upcoming technologies. Workshops organized during TECHWEEK introduce technologies to students and intent to stimulate their interest in cutting edge technologies of today. TECHWEEK is a true knowledge fair for all those who have in them a craving to learn, with workshops ranging from web-designing to robotics and embedded systems, from programming to 3-D animation.
           </p>
           <p>
-            We are excited to simplify SEO for everyone through software,
-            education, or cimmunity.
+          You don't need to be an IEEE DTU member to attend. Free for all!
           </p>
-          <Button content="Why cryo?" />
+          <Button content="What is Techweek?" />
         </motion.div>
         <div className="cards" ref={element}>
           <Card

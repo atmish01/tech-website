@@ -5,7 +5,7 @@ import { useScroll } from "../components/useScroll";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { GoPlay } from "react-icons/go";
 import { motion } from "framer-motion";
-import WorkImage from "../assets/work.svg";
+import WorkImage from "../assets/ieee.png";
 import "../styles/sections/Starter.scss";
 import { headerAnimation, imageAnimation } from "../utils/Animations";
 
@@ -26,7 +26,7 @@ export default function Starter() {
             Welcome to IEEE Techweek DTU!
           </h1>
           <p>
-          TECHWEEK is the annual workshop galore organised by IEEE DTU which offers budding engineers an insight into the various new and upcoming technologies. <br/> <br/> You don't need to be an IEEE DTU member to attend.
+          TECHWEEK is the annual workshop galore organised by IEEE DTU which offers budding engineers an insight into the various new and upcoming technologies. 
           </p>
           <div className="button-container">
             <Button content="Watch Video" icon={<GoPlay />} />
