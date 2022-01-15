@@ -23,7 +23,7 @@ export default function Starter() {
           transition={{ delay: 0.2, type: "tween" }}
         >
           <h1>
-            Welcome to IEEE Techweek DTU!
+          Welcome to IEEE Techweek DTU!
           </h1>
           <p>
           TECHWEEK is the annual workshop galore organised by IEEE DTU which offers budding engineers an insight into the various new and upcoming technologies. 
