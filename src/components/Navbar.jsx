@@ -34,19 +34,19 @@ export default function Navbar() {
             <li>
               <a href="#about">About</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#services">Services</a>
+            </li> */}
+
+            <li>
+              <a href="#timeline">Timeline</a>
             </li>
 
             <li>
-              <a href="#testimonial">Testimonial</a>
-            </li>
-
-            <li>
-              <a href="#blog">Blog</a>
+              <a href="#blog">Events</a>
             </li>
             <li>
-              <Button content="Contact" />
+              <a href ="#contact"><Button content="Contact" /></a>
             </li>
           </ul>
         </div>

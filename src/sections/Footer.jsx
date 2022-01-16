@@ -13,7 +13,7 @@ function Footer() {
   const [element, controls] = useScroll();
 
   return (
-    <div className="footer-container" ref={element}>
+    <div className="footer-container" ref={element} id ="contact">
       <div className="container">
         <div className="main-container">
           <motion.div
@@ -23,15 +23,12 @@ function Footer() {
             transition={{ duration: 0.5 }}
           >
             <BrandName isFooter={true} />
-            <p>
-              Join our newsletter to get updated with our Offers & Discounts.
-            </p>
-            <div className="mail">
-              <input type="email" placeholder="Please Enter Your Email" />
-              <button>
-                <AiOutlineSend />
-              </button>
-            </div>
+            <br/>
+            <br/>
+              <div className="form">
+                <div className="detail-name">Fill the form to know more about us.</div>
+                  <a href="#" target = "_blank">Click here</a>
+              </div>
           </motion.div>
           <motion.div
             className="quick-links"
@@ -45,56 +42,13 @@ function Footer() {
                 <a href="#">About</a>
               </li>
               <li>
-                <a href="#">Testimonial</a>
+                <a href="#">Timeline</a>
               </li>
               <li>
                 <a href="#">Contact Us</a>
               </li>
               <li>
-                <a href="#">Portfolio</a>
-              </li>
-              <li>
-                <a href="#">Career</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Terms & Conditions</a>
-              </li>
-              <li>
-                <a href="#">Privacy Policy</a>
-              </li>
-            </ul>
-          </motion.div>
-          <motion.div
-            className="industries"
-            variants={fromUp}
-            animate={controls}
-            transition={{ duration: 0.5 }}
-          >
-            <h3>Industires</h3>
-            <ul>
-              <li>
-                <a href="#">Website Development</a>
-              </li>
-              <li>
-                <a href="#">Mobile App Development</a>
-              </li>
-              <li>
-                <a href="#">Website Design</a>
-              </li>
-              <li>
-                <a href="#">Mobile App Design</a>
-              </li>
-              <li>
-                <a href="#">Digital Marketing</a>
-              </li>
-              <li>
-                <a href="#">Graphic Design</a>
-              </li>
-              <li>
-                <a href="#">IOS App Development</a>
+                <a href="#">Events</a>
               </li>
             </ul>
           </motion.div>
@@ -103,20 +57,63 @@ function Footer() {
             variants={fromDown}
             animate={controls}
             transition={{ duration: 0.5 }}
-          >
-            <h3>Get in Touch</h3>
+            >
+
             <div className="touch-section">
               <div className="icon">
-                <MdEmail />
+                <FaPhoneAlt />
               </div>
               <div className="detail">
-                <div className="detail-name">Email</div>
+                <div className="detail-name">Phone</div>
                 <div className="detail-content">
-                  <a href="#">kishansheth21@gmail.com</a>
+                <a href="tel:9111827121" onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"><p class="call-button">9111827121</p></a>
+                </div>
+              </div>
+            </div>
+
+            <div className="touch-section">
+              <div className="icon">
+                <ImLocation />
+              </div>
+              <div className="detail">
+                <div className="detail-name">Location</div>
+                <div className="detail-content">
+                  <a href="#"> DTU, Bawana Road, New Delhi</a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            className="touch"
+            variants={fromDown}
+            animate={controls}
+            transition={{ duration: 0.5 }}
+          >
+            <h3>This website was developed by:</h3>
+            <div className="touch-section">
+              <div className="icon">
+              <AiFillLinkedin />
+              </div>
+              <div className="detail">
+                <div className="detail-name">Arya Pandey</div>
+                <div className="detail-content">
+                  <a href="https://www.linkedin.com/in/arya-pandey-5340651b8/" target="_blank">Click here</a>
                 </div>
               </div>
             </div>
             <div className="touch-section">
+              <div className="icon">
+              <AiFillLinkedin />
+              </div>
+              <div className="detail">
+                <div className="detail-name">Shreya Sahu</div>
+                <div className="detail-content">
+                  <a href="https://www.linkedin.com/in/shreya-sahu-1463691bb/" target = "_blank">Click here</a>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="touch-section">
               <div className="icon">
                 <FaPhoneAlt />
               </div>
@@ -138,31 +135,31 @@ function Footer() {
                   <a href="#"> 32 StreetOne Boards, GJ 560123</a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
         <div className="copyright">
           <div className="copy">
-            <p>Copyright c 2021. All Rights Reserved.</p>
+            <p>©2022 IEEE – All rights reserved.</p>
           </div>
           <div className="icons">
             <div className="icon">
-              <a href="#">
+            <a href="https://www.facebook.com/ieeedtu/" target="_blank">
                 <FaFacebookF />
               </a>
             </div>
             <div className="icon">
-              <a href="#">
+              <a href="https://www.instagram.com/ieee.dtu/?hl=en" target="_blank">
                 <AiFillInstagram />
               </a>
             </div>
             <div className="icon">
-              <a href="#">
+            <a href="https://www.linkedin.com/company/ieee-dtu/mycompany/" target="_blank">
                 <AiFillLinkedin />
               </a>
             </div>
             <div className="icon">
-              <a href="#">
+              <a href="https://twitter.com/dtu_ieee" target="_blank">
                 {" "}
                 <FaTwitter />
               </a>

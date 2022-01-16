@@ -8,12 +8,15 @@ import { motion } from "framer-motion";
 import WorkImage from "../assets/ieee.png";
 import "../styles/sections/Starter.scss";
 import { headerAnimation, imageAnimation } from "../utils/Animations";
+// import ParticlesBackground from "./ParticlesBackground";
+
 
 export default function Starter() {
   const [element, controls] = useScroll();
 
   return (
     <div className="main-container" ref={element}>
+    {/* <ParticlesBackground> */}
       <Navbar />
       <div className="container">
         <motion.div
@@ -22,9 +25,9 @@ export default function Starter() {
           animate={controls}
           transition={{ delay: 0.2, type: "tween" }}
         >
-          <h1>
-          Welcome to IEEE Techweek DTU!
-          </h1>
+          <h2>Welcome to</h2>
+          <h1>Techweek</h1>
+          <h2>IEEE DTU!</h2>
           <p>
           TECHWEEK is the annual workshop galore organised by IEEE DTU which offers budding engineers an insight into the various new and upcoming technologies. 
           </p>
@@ -32,7 +35,7 @@ export default function Starter() {
             <Button content="Watch Video" icon={<GoPlay />} />
             <Button
               color="pink"
-              content="Request Quote"
+              content="Join Us!"
               icon={<HiOutlineArrowNarrowRight />}
             />
           </div>
@@ -46,6 +49,7 @@ export default function Starter() {
           <img src={WorkImage} alt="Work Image" />
         </motion.div>
       </div>
+    {/* </ParticlesBackground> */}
     </div>
   );
 }
