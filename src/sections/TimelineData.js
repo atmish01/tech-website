@@ -1,15 +1,21 @@
 import rob from "./images/rob.png";
 import webd from "./images/webd.png";
 import dsa from "./images/dsa.png";
-// import marvel from "./images/marvel.png";
-// import meme from "./images/meme.png";
-// import anime from "./images/anime.png";
+import bp from "./images/bp.png";
+import gd from "./images/gd.png";
+import an from "./images/an.png";
+import gdes from "./images/gdes.png";
+import fl from "./images/fl.png";
+import ml from "./images/ml.png";
+import cd from "./images/cd.png";
+import iot from "./images/iot.png";
+
 
 export const data = [
   {
     heading: "Basic Programming",
     description: "Show us your Meme Talent!",
-    // img: meme,
+    img: bp,
     date: "8th Jan, 10am - 9th Jan, 11:59pm",
   },
   {
@@ -33,44 +39,44 @@ export const data = [
   {
     heading: "Flutter",
     description: "Let's check your Marvel Trivia!",
-    // img: marvel,
+    img: fl,
     date: "9th Jan, 5pm Onwards",
   },
 
   {
     heading: "Machine Learning",
     description: "Show off your hours of watching Naruto!",
-    // img: anime,
+    img: ml,
     date: "9th Jan, 6pm Onwards",
   },
   {
     heading: "Circuit Design",
     description: "A Twist to the Game of Chess",
-    // img: chess,
+    img: cd,
     date: "8th Jan, 7pm Onwards",
   },
   {
     heading: "Game Development",
     description: "A Twist to the Game of Chess",
-    // img: chess,
+    img: gd,
     date: "8th Jan, 7pm Onwards",
   },
   {
     heading: "Graphic Design",
     description: "A Twist to the Game of Chess",
-    // img: chess,
+    img: gdes,
     date: "8th Jan, 7pm Onwards",
   },
   {
     heading: "Internet Of Things",
     description: "A Twist to the Game of Chess",
-    // img: chess,
+    img: iot,
     date: "8th Jan, 7pm Onwards",
   },
   {
     heading: "Animation",
     description: "A Twist to the Game of Chess",
-    // img: chess,
+    img: an,
     date: "8th Jan, 7pm Onwards",
   },
 ];

@@ -6,7 +6,7 @@ import Starter from "./sections/Starter";
 import Blogs from "./sections/Blogs";
 import ScrollToTop from "./components/ScrollToTop";
 import { motion } from "framer-motion";
-import Particles from "react-particles-js";
+// import Particles from "react-particles-js";
 
 
 function App() {
